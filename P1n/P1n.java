@@ -19,6 +19,7 @@ public class P1n {
   public static void main(String[] args) {
 
     // Tratar os parametros de entrada
+    // Validar se não é letra
     switch (args.length) {
       case 1:
         double a = Double.parseDouble(args[0]);
