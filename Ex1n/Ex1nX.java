@@ -13,7 +13,7 @@ public class Ex1nX {
     System.out.println("Digite uma string: ");
     line = dataFile.readLine();
 
-    while (line != null) // Enquando houver linhas a serem lidas
+    while (line.isEmpty()) // Enquando houver linhas a serem lidas
     {
 
       for (location = 0; location < line.length(); location++) {
