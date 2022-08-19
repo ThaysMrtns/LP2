@@ -3,8 +3,9 @@ import java.lang.*;
 
 public class P1n {
   private static double calcula(double a) {
-    // Math.round(double*a)/100.0;
-    double result = Math.round(a * 10.0) / 10.0;
+    double area = Math.PI * a * a;
+    double result = Math.round(area * 100.00) / 100.00;
+    System.out.printf("A area do circulo é %,.2f unidades de area \n", area);
     return result;
   }
 
@@ -23,7 +24,7 @@ public class P1n {
     switch (args.length) {
       case 1:
         double a = Double.parseDouble(args[0]);
-        System.out.println(calcula(a));
+        calcula(a);
 
         break;
       case 2:
